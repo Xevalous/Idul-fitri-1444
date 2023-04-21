@@ -88,7 +88,7 @@ function cekJam(i) {
 }
 setInterval(tampilJam, 100);
 
-var canvas = document.getElementById('container');
+var canvas = document.getElementById('particle-container');
 var clone = document.getElementById('blurCanvasBottom');
 
 var cloneCtx = clone.getContext('2d');
@@ -101,7 +101,7 @@ var ww = $(window).width();
 var wh = $(window).height();
 canvas.width = ww;
 canvas.height = wh;
-var partCount = 130;
+var partCount = 110;
 var particles = [];
 
 function particle() {

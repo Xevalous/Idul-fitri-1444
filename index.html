@@ -1,45 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+			crossorigin="anonymous" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Selamat Hari Raya Idul Fitri 1441 H ~ Helmi</title>
+	</head>
+	<body>
+		<audio autoplay src="takbir.mp3"></audio>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:500,400,300,200,100" rel="stylesheet" type="text/css" />
+		<canvas id="particle-container" role="main" class="w-100 h-100 position-absolute"></canvas>
+		<div class="w-100 h-100 d-flex align-items-center px-4">
+			<div>
+				<div id="jam"></div>
+				<div class="lead mt-3 fs-1">بسم الله الرحمن الرحيم</div>
+				<div class="intro fs-3">Selamat Hari Raya Idul Fitri 1441 H</div>
+				<div class="typewrite" data-period="2000" data-type='[ "Saya Helmi Aryanto Mengucapkan", "Minal Aidin Wal Faidzin", "Mohon Maaf Lahir dan Batin"]'>
+					<span class="wrap"></span>
+				</div>
+				<blockquote class="blockquote mt-3">
+					<p class="quote mb-0 small">
+						Hari ini kurendahkan diriku, kulupakan kesombonganku, kutundukkan kepalaku, lalu kududuk terpaku di depan jendela hatimu, menanti pintu maafmu, terbuka untukku. Selamat Hari Raya Idul
+						Fitri, Mohon maaf lahir dan batin.
+					</p>
+				</blockquote>
+			</div>
+		</div>
+		<div class="blur blurTop position-absolute"><canvas class="canvas" id="blurCanvasTop"></canvas></div>
+		<div class="blur blurBottom blurCanvasBottom top-0"><canvas width="1000px" height="1000px" class="canvas" id="blurCanvasBottom"></canvas></div>
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
-    <title>Selamat Hari Raya Idul Fitri 1441 H ~ Helmi</title>
-  </head>
-  <body>
-    <audio autoplay src="takbir.mp3"></audio>
-    <link href='https://fonts.googleapis.com/css?family=Raleway:500,400,300,200,100' rel='stylesheet' type='text/css'>
-    <canvas class="particle-container" id="container" role="main"></canvas>
-      <div class="content">
-        <h1>
-            <div id="jam"></div>
-            <p class="lead mt-2">
-                بسم الله الرحمن الرحيم
-            </p>
-            <div class="intro">Selamat Hari Raya Idul Fitri 1441 H</div>
-            <a class="typewrite" data-period="2000" data-type='[ "Saya Helmi Aryanto Mengucapkan", "Minal Aidin Wal Faidzin", "Mohon Maaf Lahir dan Batin"]'>
-              <span class="wrap"></span>
-            </a>
-            <blockquote class="blockquote mt-3">
-                <p class="quote mb-0 small">Hari ini kurendahkan diriku, kulupakan kesombonganku, kutundukkan kepalaku, lalu kududuk terpaku di depan jendela hatimu, menanti pintu maafmu, terbuka untukku. Selamat Hari Raya Idul Fitri, Mohon maaf lahir dan batin.</p>
-              </blockquote>
-        </h1>
-      </div>
-    </div>
-    <div class="blur blurTop"><canvas class="canvas"id="blurCanvasTop"></canvas></div>
-    <div class="blur blurBottom"><canvas width="1000px" height="1000px" class="canvas" id="blurCanvasBottom"></canvas></div>
-    
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-</body>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+			integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+			crossorigin="anonymous"></script>
+		<script src="script.js"></script>
+	</body>
 </html>
