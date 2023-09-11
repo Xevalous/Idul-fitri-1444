@@ -1,4 +1,4 @@
 Using:
 - HTML
-- TailWind CSS
+- CSS
 - JavaScript
